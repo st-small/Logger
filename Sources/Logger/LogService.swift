@@ -8,13 +8,13 @@ public final class LogService {
     
     private static var providers = [LogProvider]()
     
-    static let shared = LogService(providers: providers)
+    public static let shared = LogService(providers: providers)
     
     private init(providers: [LogProvider]) {
         LogService.providers = providers
     }
     
-    static func register(provider: LogProvider) {
+    public static func register(provider: LogProvider) {
         providers.append(provider)
     }
     
