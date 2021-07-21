@@ -1,6 +1,6 @@
 public class Logger {
     
-    public func logEvent(_ event: String) {
+    public static func logEvent(_ event: String) {
         print("Event received \(event)")
     }
 }
